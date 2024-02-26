@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>fr.iutblagnac</groupId>
-  <artifactId>tp_qualite</artifactId>
+  <groupId>fr.germainlespingal</groupId>
+  <artifactId>tp_qualite_schtroumpf</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
     <properties>
@@ -28,7 +28,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>HelloJava</mainClass>
+              <mainClass>MainVillage</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -40,6 +40,15 @@
         <configuration> 
           <source>8</source> 
           <doclint>none</doclint>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.3.2</version>
+        <configuration> 
+          <show>private</show>
+          <nohelp>true</nohelp>
         </configuration>
       </plugin>
     </plugins>
